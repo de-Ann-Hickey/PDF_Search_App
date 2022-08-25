@@ -24,7 +24,7 @@ WIDGET_WIDTHS = []  # For window resizing
 
 # overwriting tkinter\'s callback exception method in order to display
 # exceptions in message window
-def report_callback_exception(val):
+def report_callback_exception(self, exc, val, tb):
     messagebox.showerror("Error:", message=str(val))
 
 
